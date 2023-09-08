@@ -1,0 +1,14 @@
+# FILE: docker-compose.yml BEGINS =======================================
+version: '3'
+
+services:
+  postgres:
+    container_name: fintech_fullstack
+    image: postgres:15.4-alpine3.18
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=alias111
+    ports:
+      - '5432:5432'
+
+# FILE: docker-compose.yml END    =======================================
